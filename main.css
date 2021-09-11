@@ -6,3 +6,30 @@
     width: 50vw;
     
 }
+
+.heading {
+    color: orange;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    background-color:orange;
+    color: white;
+    margin: 20px auto;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    display: block;
+}
+
+
+table th, tr, td{
+    min-width: 100px;
+    height: 30px;
+}
+
+th, td {
+    border: 2px solid orange;
+    padding: 2px;
+}
