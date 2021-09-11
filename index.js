@@ -9,7 +9,7 @@ checkButton.addEventListener("click", function validateBillCashAmount() {
     hideMessage();
     if(billAmount.value > 0 ){
 
-        if(cashGiven.value >= billAmount.value){
+        if(Number(cashGiven.value) >= Number(billAmount.value)) {
             const amountToBeReturned = cashGiven.value - billAmount.value;
 
             calculateChange(amountToBeReturned);
@@ -31,8 +31,9 @@ checkButton.addEventListener("click", function validateBillCashAmount() {
 function calculateChange(amountToBeReturned) {
     for(let i = 0; i < availableNotes.length; i++){
         const numberOfNotes = Math.trunc(amountToBeReturned / availableNotes[i]);
-        amountToBeReturned  = amountToBeReturned % availableNotes[i];
+        
         noOfNotes[i].innerText = numberOfNotes;
+        amountToBeReturned  = amountToBeReturned % availableNotes[i];
 
     }
 
