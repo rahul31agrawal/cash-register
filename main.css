@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 
 
 .container{
+    
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    align-items: center;
+    width: 100%;
     
 }
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
+
 
 .heading {
     color: orange;
